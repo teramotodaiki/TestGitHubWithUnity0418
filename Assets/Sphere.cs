@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Sphere : MonoBehaviour {
 
+    public float Speed = 1f;
+    
 	// Use this for initialization
 	void Start () {
 	
@@ -10,6 +12,6 @@ public class Sphere : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        transform.Rotate(Vector3.up * Speed);
 	}
 }
